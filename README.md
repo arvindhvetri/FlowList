@@ -79,7 +79,7 @@ DB_NAME=tododb
 ```bash
 python app.py
 ```
-Visit http://127.0.0.1:5000 in your browser.
+Visit http://127.0.0.1:8000 in your browser.
 
 ---
 
