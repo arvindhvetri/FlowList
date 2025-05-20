@@ -21,7 +21,9 @@ FlowList is a minimalist, beautifully-crafted to-do list web application built w
 
 ## 🖼️ Preview
 
-![FlowList Screenshot](preview.png)  
+![Preview](https://github.com/user-attachments/assets/86f1587f-b62f-45f3-91dc-d4b21ada8b0c)
+
+  
 <sub>*A glimpse into the clean interface of FlowList*</sub>
 
 ---
@@ -43,3 +45,39 @@ FlowList is a minimalist, beautifully-crafted to-do list web application built w
 ```bash
 git clone https://github.com/yourusername/flowlist.git
 cd flowlist
+```
+
+### 2. Set Up Virtual Environment
+```bash
+# On Windows:
+py -3 -m venv .venv
+.venv\Scripts\activate  
+```
+
+### 3. Install Dependencies
+```bash
+pip install -r requirements.txt 
+```
+
+### 4. Configure Database
+- Create a MySQL database named `tododb`.
+- Create a Table named `tasks`.
+
+### 5. Configure .env
+```bash
+mkdir config
+sudo nano db.env
+
+# Replace the values and save it.
+DB_HOST=localhost
+DB_USER=root
+DB_PASSWORD=<password>
+DB_NAME=tododb
+```
+
+### 6. Run the App
+```bash
+python  app.py
+```
+Visit http://127.0.0.1:5000 in your browser.
+
